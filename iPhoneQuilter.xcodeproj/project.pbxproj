@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0414505B6300B03A42 /* UIKit.framework */; };
+		987D3F0714505B6300B03A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0614505B6300B03A42 /* Foundation.framework */; };
+		987D3F0914505B6300B03A42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0814505B6300B03A42 /* CoreGraphics.framework */; };
+		987D3F0F14505B6300B03A42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987D3F0D14505B6300B03A42 /* InfoPlist.strings */; };
+		987D3F1114505B6300B03A42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3F1014505B6300B03A42 /* main.m */; };
+		987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3F1414505B6300B03A42 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		987D3F0014505B6300B03A42 /* iPhoneQuilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneQuilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		987D3F0414505B6300B03A42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		987D3F0614505B6300B03A42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		987D3F0814505B6300B03A42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		987D3F0C14505B6300B03A42 /* iPhoneQuilter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhoneQuilter-Info.plist"; sourceTree = "<group>"; };
+		987D3F0E14505B6300B03A42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		987D3F1014505B6300B03A42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		987D3F1214505B6300B03A42 /* iPhoneQuilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPhoneQuilter-Prefix.pch"; sourceTree = "<group>"; };
+		987D3F1314505B6300B03A42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		987D3F1414505B6300B03A42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		987D3EFD14505B6300B03A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */,
+				987D3F0714505B6300B03A42 /* Foundation.framework in Frameworks */,
+				987D3F0914505B6300B03A42 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		987D3EF514505B6300B03A42 = {
+			isa = PBXGroup;
+			children = (
+				987D3F0A14505B6300B03A42 /* iPhoneQuilter */,
+				987D3F0314505B6300B03A42 /* Frameworks */,
+				987D3F0114505B6300B03A42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		987D3F0114505B6300B03A42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				987D3F0014505B6300B03A42 /* iPhoneQuilter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		987D3F0314505B6300B03A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				987D3F0414505B6300B03A42 /* UIKit.framework */,
+				987D3F0614505B6300B03A42 /* Foundation.framework */,
+				987D3F0814505B6300B03A42 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		987D3F0A14505B6300B03A42 /* iPhoneQuilter */ = {
+			isa = PBXGroup;
+			children = (
+				987D3F1314505B6300B03A42 /* AppDelegate.h */,
+				987D3F1414505B6300B03A42 /* AppDelegate.m */,
+				987D3F0B14505B6300B03A42 /* Supporting Files */,
+			);
+			path = iPhoneQuilter;
+			sourceTree = "<group>";
+		};
+		987D3F0B14505B6300B03A42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				987D3F0C14505B6300B03A42 /* iPhoneQuilter-Info.plist */,
+				987D3F0D14505B6300B03A42 /* InfoPlist.strings */,
+				987D3F1014505B6300B03A42 /* main.m */,
+				987D3F1214505B6300B03A42 /* iPhoneQuilter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		987D3EFF14505B6300B03A42 /* iPhoneQuilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 987D3F1814505B6300B03A42 /* Build configuration list for PBXNativeTarget "iPhoneQuilter" */;
+			buildPhases = (
+				987D3EFC14505B6300B03A42 /* Sources */,
+				987D3EFD14505B6300B03A42 /* Frameworks */,
+				987D3EFE14505B6300B03A42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPhoneQuilter;
+			productName = iPhoneQuilter;
+			productReference = 987D3F0014505B6300B03A42 /* iPhoneQuilter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		987D3EF714505B6300B03A42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 987D3EFA14505B6300B03A42 /* Build configuration list for PBXProject "iPhoneQuilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 987D3EF514505B6300B03A42;
+			productRefGroup = 987D3F0114505B6300B03A42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				987D3EFF14505B6300B03A42 /* iPhoneQuilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		987D3EFE14505B6300B03A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987D3F0F14505B6300B03A42 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		987D3EFC14505B6300B03A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987D3F1114505B6300B03A42 /* main.m in Sources */,
+				987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		987D3F0D14505B6300B03A42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				987D3F0E14505B6300B03A42 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		987D3F1614505B6300B03A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		987D3F1714505B6300B03A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		987D3F1914505B6300B03A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhoneQuilter/iPhoneQuilter-Prefix.pch";
+				INFOPLIST_FILE = "iPhoneQuilter/iPhoneQuilter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		987D3F1A14505B6300B03A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhoneQuilter/iPhoneQuilter-Prefix.pch";
+				INFOPLIST_FILE = "iPhoneQuilter/iPhoneQuilter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		987D3EFA14505B6300B03A42 /* Build configuration list for PBXProject "iPhoneQuilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				987D3F1614505B6300B03A42 /* Debug */,
+				987D3F1714505B6300B03A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		987D3F1814505B6300B03A42 /* Build configuration list for PBXNativeTarget "iPhoneQuilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				987D3F1914505B6300B03A42 /* Debug */,
+				987D3F1A14505B6300B03A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 987D3EF714505B6300B03A42 /* Project object */;
+}
