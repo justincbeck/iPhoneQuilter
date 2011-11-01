@@ -8,7 +8,6 @@
 
 #import "QuiltViewController.h"
 #import "GridableTableViewCell.h"
-#import "TabBarController.h"
 #include <stdlib.h>
 
 @implementation QuiltViewController
@@ -125,7 +124,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [(TabBarController *) [self parentViewController] hideTabBar:((TabBarController *) [self parentViewController])];
     [super viewDidLoad];
 }
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		982E26151459BA6900493B2D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982E26141459BA6900493B2D /* TabBarController.m */; };
 		987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0414505B6300B03A42 /* UIKit.framework */; };
 		987D3F0714505B6300B03A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0614505B6300B03A42 /* Foundation.framework */; };
 		987D3F0914505B6300B03A42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0814505B6300B03A42 /* CoreGraphics.framework */; };
@@ -17,12 +16,9 @@
 		989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD5781459D6A90068D71D /* QuiltViewController.m */; };
 		989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */; };
 		98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */; };
-		98ECE75D14530C7500DF7847 /* DataEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE75C14530C7500DF7847 /* DataEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		982E26131459BA6900493B2D /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
-		982E26141459BA6900493B2D /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		987D3F0014505B6300B03A42 /* iPhoneQuilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneQuilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987D3F0414505B6300B03A42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		987D3F0614505B6300B03A42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,8 +34,6 @@
 		989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridableTableViewCell.h; sourceTree = "<group>"; };
 		989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridableTableViewCell.m; sourceTree = "<group>"; };
 		98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		98ECE75B14530C7500DF7847 /* DataEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEntryViewController.h; sourceTree = "<group>"; };
-		98ECE75C14530C7500DF7847 /* DataEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +84,10 @@
 			children = (
 				987D3F1314505B6300B03A42 /* AppDelegate.h */,
 				987D3F1414505B6300B03A42 /* AppDelegate.m */,
-				982E26131459BA6900493B2D /* TabBarController.h */,
-				982E26141459BA6900493B2D /* TabBarController.m */,
 				989FD5771459D6A90068D71D /* QuiltViewController.h */,
 				989FD5781459D6A90068D71D /* QuiltViewController.m */,
 				989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */,
 				989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */,
-				98ECE75B14530C7500DF7847 /* DataEntryViewController.h */,
-				98ECE75C14530C7500DF7847 /* DataEntryViewController.m */,
 				987D3F0B14505B6300B03A42 /* Supporting Files */,
 			);
 			path = iPhoneQuilter;
@@ -177,8 +167,6 @@
 			files = (
 				987D3F1114505B6300B03A42 /* main.m in Sources */,
 				987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */,
-				98ECE75D14530C7500DF7847 /* DataEntryViewController.m in Sources */,
-				982E26151459BA6900493B2D /* TabBarController.m in Sources */,
 				989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */,
 				989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */,
 			);
