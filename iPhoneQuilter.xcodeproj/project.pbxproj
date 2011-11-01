@@ -15,6 +15,7 @@
 		987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3F1414505B6300B03A42 /* AppDelegate.m */; };
 		989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD5781459D6A90068D71D /* QuiltViewController.m */; };
 		989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */; };
+		98A1BB88146069C40027301F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A1BB87146069C40027301F /* TestViewController.m */; };
 		98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		989FD5781459D6A90068D71D /* QuiltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuiltViewController.m; sourceTree = "<group>"; };
 		989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridableTableViewCell.h; sourceTree = "<group>"; };
 		989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridableTableViewCell.m; sourceTree = "<group>"; };
+		98A1BB86146069C40027301F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		98A1BB87146069C40027301F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,6 +92,8 @@
 				989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */,
 				989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */,
 				987D3F0B14505B6300B03A42 /* Supporting Files */,
+				98A1BB86146069C40027301F /* TestViewController.h */,
+				98A1BB87146069C40027301F /* TestViewController.m */,
 			);
 			path = iPhoneQuilter;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */,
 				989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */,
 				989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */,
+				98A1BB88146069C40027301F /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
