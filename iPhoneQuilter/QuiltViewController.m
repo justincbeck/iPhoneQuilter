@@ -66,7 +66,12 @@
         if ([images count] > 0)
         {
             CGImageRef thumb = [[images objectAtIndex:arc4random() % 198] thumbnail];
-            [imageView setImage:[UIImage imageWithCGImage:thumb]];
+            UIImage *image = [UIImage imageWithCGImage:thumb];
+            [imageView setImage:image];
+
+            CGAffineTransform transform = CGAffineTransformMakeRotation((3.14159265358979323846264338327950288 / 2) * (arc4random() % 
+
+            imageView.transform = transform;
         }
         
         [[cell contentView] addSubview:imageView];
