@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982E26151459BA6900493B2D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982E26141459BA6900493B2D /* TabBarController.m */; };
 		987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0414505B6300B03A42 /* UIKit.framework */; };
 		987D3F0714505B6300B03A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0614505B6300B03A42 /* Foundation.framework */; };
 		987D3F0914505B6300B03A42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D3F0814505B6300B03A42 /* CoreGraphics.framework */; };
 		987D3F0F14505B6300B03A42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987D3F0D14505B6300B03A42 /* InfoPlist.strings */; };
 		987D3F1114505B6300B03A42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3F1014505B6300B03A42 /* main.m */; };
 		987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3F1414505B6300B03A42 /* AppDelegate.m */; };
+		9895F2031459FE97007314CD /* peanut-butter-jelly-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9895F2021459FE97007314CD /* peanut-butter-jelly-time.gif */; };
+		989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD5781459D6A90068D71D /* QuiltViewController.m */; };
+		989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */; };
+		989FD5861459F84C0068D71D /* QuiltGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD5851459F84C0068D71D /* QuiltGenerator.m */; };
+		98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */; };
+		98ECE75D14530C7500DF7847 /* DataEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ECE75C14530C7500DF7847 /* DataEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		982E26131459BA6900493B2D /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		982E26141459BA6900493B2D /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		987D3F0014505B6300B03A42 /* iPhoneQuilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneQuilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987D3F0414505B6300B03A42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		987D3F0614505B6300B03A42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +35,16 @@
 		987D3F1214505B6300B03A42 /* iPhoneQuilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPhoneQuilter-Prefix.pch"; sourceTree = "<group>"; };
 		987D3F1314505B6300B03A42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		987D3F1414505B6300B03A42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9895F2021459FE97007314CD /* peanut-butter-jelly-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "peanut-butter-jelly-time.gif"; sourceTree = "<group>"; };
+		989FD5771459D6A90068D71D /* QuiltViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuiltViewController.h; sourceTree = "<group>"; };
+		989FD5781459D6A90068D71D /* QuiltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuiltViewController.m; sourceTree = "<group>"; };
+		989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridableTableViewCell.h; sourceTree = "<group>"; };
+		989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridableTableViewCell.m; sourceTree = "<group>"; };
+		989FD5841459F84C0068D71D /* QuiltGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuiltGenerator.h; sourceTree = "<group>"; };
+		989FD5851459F84C0068D71D /* QuiltGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuiltGenerator.m; sourceTree = "<group>"; };
+		98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		98ECE75B14530C7500DF7847 /* DataEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEntryViewController.h; sourceTree = "<group>"; };
+		98ECE75C14530C7500DF7847 /* DataEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */,
 				987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */,
 				987D3F0714505B6300B03A42 /* Foundation.framework in Frameworks */,
 				987D3F0914505B6300B03A42 /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +65,7 @@
 		987D3EF514505B6300B03A42 = {
 			isa = PBXGroup;
 			children = (
+				989FD5821459F5980068D71D /* Utilities */,
 				987D3F0A14505B6300B03A42 /* iPhoneQuilter */,
 				987D3F0314505B6300B03A42 /* Frameworks */,
 				987D3F0114505B6300B03A42 /* Products */,
@@ -62,6 +83,7 @@
 		987D3F0314505B6300B03A42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */,
 				987D3F0414505B6300B03A42 /* UIKit.framework */,
 				987D3F0614505B6300B03A42 /* Foundation.framework */,
 				987D3F0814505B6300B03A42 /* CoreGraphics.framework */,
@@ -74,6 +96,14 @@
 			children = (
 				987D3F1314505B6300B03A42 /* AppDelegate.h */,
 				987D3F1414505B6300B03A42 /* AppDelegate.m */,
+				982E26131459BA6900493B2D /* TabBarController.h */,
+				982E26141459BA6900493B2D /* TabBarController.m */,
+				989FD5771459D6A90068D71D /* QuiltViewController.h */,
+				989FD5781459D6A90068D71D /* QuiltViewController.m */,
+				989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */,
+				989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */,
+				98ECE75B14530C7500DF7847 /* DataEntryViewController.h */,
+				98ECE75C14530C7500DF7847 /* DataEntryViewController.m */,
 				987D3F0B14505B6300B03A42 /* Supporting Files */,
 			);
 			path = iPhoneQuilter;
@@ -82,12 +112,22 @@
 		987D3F0B14505B6300B03A42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9895F2021459FE97007314CD /* peanut-butter-jelly-time.gif */,
 				987D3F0C14505B6300B03A42 /* iPhoneQuilter-Info.plist */,
 				987D3F0D14505B6300B03A42 /* InfoPlist.strings */,
 				987D3F1014505B6300B03A42 /* main.m */,
 				987D3F1214505B6300B03A42 /* iPhoneQuilter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		989FD5821459F5980068D71D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				989FD5841459F84C0068D71D /* QuiltGenerator.h */,
+				989FD5851459F84C0068D71D /* QuiltGenerator.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				987D3F0F14505B6300B03A42 /* InfoPlist.strings in Resources */,
+				9895F2031459FE97007314CD /* peanut-butter-jelly-time.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +194,11 @@
 			files = (
 				987D3F1114505B6300B03A42 /* main.m in Sources */,
 				987D3F1514505B6300B03A42 /* AppDelegate.m in Sources */,
+				98ECE75D14530C7500DF7847 /* DataEntryViewController.m in Sources */,
+				982E26151459BA6900493B2D /* TabBarController.m in Sources */,
+				989FD5791459D6A90068D71D /* QuiltViewController.m in Sources */,
+				989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */,
+				989FD5861459F84C0068D71D /* QuiltGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +302,7 @@
 				987D3F1A14505B6300B03A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
