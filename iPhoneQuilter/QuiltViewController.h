@@ -9,5 +9,9 @@
 #import "AssetsLibrary/AssetsLibrary.h"
 
 @interface QuiltViewController : UITableViewController
+{
+    NSMutableArray *images;
+    ALAssetsLibrary *library;
+}
 
 @end

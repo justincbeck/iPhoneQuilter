@@ -9,6 +9,7 @@
 #import "QuiltViewController.h"
 #import "GridableTableViewCell.h"
 #import "TabBarController.h"
+#include <stdlib.h>
 
 @implementation QuiltViewController
 
@@ -45,6 +46,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (images.count == 0)
+    {
+        [[self tableView] reloadData];
+    }
+    
     float height = [self tableView:tableView heightForRowAtIndexPath:indexPath];
     
     GridableTableViewCell *cell = [[GridableTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
@@ -54,28 +60,14 @@
     
     float leftEdge = 0;
     float colWidth = width / 9.0;
-    
-    NSMutableArray *images = [[NSMutableArray alloc] initWithCapacity:(9.0 * 13.0)];
-    NSMutableArray *groups = [[NSMutableArray alloc] init];
 
-    void (^populateImages)
-    (ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop) {
-        if(group != nil) {
-            [groups addObject:group];
-            NSLog(@"Number of assets in group: %d", [group numberOfAssets]);
-        }
-    };
-                                         
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    
-    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:populateImages failureBlock:^(NSError *error) {
-        NSLog(@"Failure");
-    }];
-    
     for (int i = 0; i < 9; i++) {
-        UIImage *image = [UIImage imageNamed:@"peanut-butter-jelly-time.gif"];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(leftEdge, 0, colWidth, height)];
-        imageView.image = image;
+        if ([images count] > 0)
+        {
+            CGImageRef thumb = [[images objectAtIndex:arc4random() % 198] thumbnail];
+            [imageView setImage:[UIImage imageWithCGImage:thumb]];
+        }
         
         [[cell contentView] addSubview:imageView];
         leftEdge += colWidth;
@@ -99,6 +91,26 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
+    images = [[NSMutableArray alloc] initWithCapacity:(9.0 * 13.0)];
+    
+    void (^populateImages)
+    (ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop) {
+        if(group != nil) {
+            [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
+                if (asset != NULL)
+                {
+                    [images addObject:asset];
+                }
+            }];
+        }
+    };
+    
+    library = [[ALAssetsLibrary alloc] init];
+    
+    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:populateImages failureBlock:^(NSError *error) {
+        NSLog(@"Failure");
+    }];
+    
     UITableView *quilt = [[UITableView alloc] initWithFrame:CGRectZero];
     [quilt setBackgroundColor:[UIColor whiteColor]];
     
