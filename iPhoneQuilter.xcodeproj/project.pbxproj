@@ -17,6 +17,7 @@
 		989FD57D1459DB9B0068D71D /* GridableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */; };
 		98A1BB88146069C40027301F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A1BB87146069C40027301F /* SettingsViewController.m */; };
 		98A1BB8A14607E010027301F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A1BB8914607E010027301F /* AVFoundation.framework */; };
+		98B0704314630A6F005E5423 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B0704214630A6F005E5423 /* MobileCoreServices.framework */; };
 		98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +36,10 @@
 		989FD5781459D6A90068D71D /* QuiltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuiltViewController.m; sourceTree = "<group>"; };
 		989FD57B1459DB9B0068D71D /* GridableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridableTableViewCell.h; sourceTree = "<group>"; };
 		989FD57C1459DB9B0068D71D /* GridableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridableTableViewCell.m; sourceTree = "<group>"; };
-		98A1BB86146069C40027301F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SettingsViewController.h; sourceTree = "<group>"; };
+		98A1BB86146069C40027301F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		98A1BB87146069C40027301F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		98A1BB8914607E010027301F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		98B0704214630A6F005E5423 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B0704314630A6F005E5423 /* MobileCoreServices.framework in Frameworks */,
 				98A1BB8A14607E010027301F /* AVFoundation.framework in Frameworks */,
 				98CBB229145F2D2000CE12AA /* AssetsLibrary.framework in Frameworks */,
 				987D3F0514505B6300B03A42 /* UIKit.framework in Frameworks */,
@@ -60,7 +63,6 @@
 		987D3EF514505B6300B03A42 = {
 			isa = PBXGroup;
 			children = (
-				98A1BB8914607E010027301F /* AVFoundation.framework */,
 				987D3F0A14505B6300B03A42 /* iPhoneQuilter */,
 				987D3F0314505B6300B03A42 /* Frameworks */,
 				987D3F0114505B6300B03A42 /* Products */,
@@ -78,6 +80,8 @@
 		987D3F0314505B6300B03A42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98B0704214630A6F005E5423 /* MobileCoreServices.framework */,
+				98A1BB8914607E010027301F /* AVFoundation.framework */,
 				98CBB228145F2D2000CE12AA /* AssetsLibrary.framework */,
 				987D3F0414505B6300B03A42 /* UIKit.framework */,
 				987D3F0614505B6300B03A42 /* Foundation.framework */,

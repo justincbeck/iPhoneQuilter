@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
+@interface SettingsViewController: UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-
-@interface SettingsViewController: UIViewController
-
+-(BOOL) startCameraControllerFromViewController: UIViewController usingDelegate: UIViewController;
+-(void) imagePickerController: (UIImagePickerController *) picker didFinishPickingMediaWithInfo: (NSDictionary *) info;
 @end

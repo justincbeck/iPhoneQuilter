@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 #import "QuiltViewController.h"
+#import <MobileCoreServices/UTCoreTypes.h>
 
 @implementation SettingsViewController
 
@@ -37,6 +38,72 @@
 }
 */
 
+- (void) showCameraUI
+{
+    [self startCameraControllerFromViewController: self usingDelegate: self];
+}
+
+- (BOOL)startCameraControllerFromViewController: (UIViewController *) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate
+{
+    if (([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil) || (controller == nil))
+        return NO;
+
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    // Displays a control that allows the user to choose picture or
+    // movie capture, if both are available:
+    cameraUI.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+    
+    // Hides the controls for moving & scaling pictures, or for
+    // trimming movies. To instead show the controls, use YES.
+    cameraUI.allowsEditing = NO;
+    
+    cameraUI.delegate = delegate;
+    
+    [controller presentModalViewController: cameraUI animated: YES];
+    return YES;
+}
+
+- (void) imagePickerController: (UIImagePickerController *) picker didFinishPickingMediaWithInfo: (NSDictionary *) info {
+    
+    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
+    UIImage *originalImage, *editedImage, *imageToSave;
+    
+    // Handle a still image capture
+    if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeImage, 0) == kCFCompareEqualTo)
+    {
+        editedImage = (UIImage *) [info objectForKey: UIImagePickerControllerEditedImage];
+        originalImage = (UIImage *) [info objectForKey: UIImagePickerControllerOriginalImage];
+        
+        if (editedImage)
+        {
+            imageToSave = editedImage;
+        }
+        else
+        {
+            imageToSave = originalImage;
+        }
+        
+        // Save the new image (original or edited) to the Camera Roll
+        UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
+    }
+    
+    // Handle a movie capture
+    if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo)
+    {
+        
+        NSString *moviePath = [[info objectForKey: UIImagePickerControllerMediaURL] path];
+        
+        if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath))
+        {
+            UISaveVideoAtPathToSavedPhotosAlbum (moviePath, nil, nil, nil);
+        }
+    }
+    
+    [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+}
+
 - (void)showQuilt
 {
     [((UINavigationController *) [self parentViewController]) pushViewController:[[QuiltViewController alloc] init] animated:YES];
@@ -45,8 +112,22 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    label.text = @"Phooey";
+    UILabel *phooeyLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 100, 30)];
+    phooeyLabel.text = @"Phooey";
+    phooeyLabel.shadowColor = [UIColor blackColor];
+    phooeyLabel.shadowOffset = CGSizeMake (1, 1);
+    phooeyLabel.textColor = [UIColor lightGrayColor];
+    phooeyLabel.textAlignment= UITextAlignmentCenter;
+    [self.view addSubview:phooeyLabel];
+    
+    UIButton *showQuilt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [showQuilt addTarget:self action:@selector(showQuilt) forControlEvents:UIControlEventTouchDown];
+    [showQuilt setTitle:@"Phooey" forState:UIControlStateNormal];
+    showQuilt.frame = CGRectMake(100, 10, 100, 30);
+    [self.view addSubview:showQuilt];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 100, 30)];
+    label.text = @"Camera";
     label.shadowColor = [UIColor blackColor];
     label.shadowOffset = CGSizeMake (1, 1);
     label.textColor = [UIColor lightGrayColor];
@@ -54,9 +135,9 @@
     [self.view addSubview:label];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button addTarget:self action:@selector(showQuilt) forControlEvents:UIControlEventTouchDown];
-    [button setTitle:@"Phooey" forState:UIControlStateNormal];
-    button.frame = CGRectMake(100, 0, 100, 30);
+    [button addTarget:self action:@selector(showCameraUI) forControlEvents:UIControlEventTouchDown];
+    [button setTitle:@"Camera" forState:UIControlStateNormal];
+    button.frame = CGRectMake(100, 50, 100, 30);
     [self.view addSubview:button];
     
     [super viewDidLoad];
