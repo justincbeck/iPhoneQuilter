@@ -8,6 +8,6 @@
 
 
 
-@interface TestViewController: UIViewController
+@interface SettingsViewController: UIViewController
 
 @end

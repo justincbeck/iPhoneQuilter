@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "QuiltViewController.h"
-#import "TestViewController.h"
+#import "SettingsViewController.h"
 
 @implementation AppDelegate
 
@@ -17,9 +17,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-//    self.window.rootViewController = [[QuiltViewController alloc] init];
-    self.window.rootViewController = [[TestViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc] init];
+    [navController pushViewController:[[SettingsViewController alloc] init] animated:FALSE];
+    
+    self.window.rootViewController = navController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

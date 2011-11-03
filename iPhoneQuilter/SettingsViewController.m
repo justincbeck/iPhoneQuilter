@@ -6,9 +6,10 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "TestViewController.h"
+#import "SettingsViewController.h"
+#import "QuiltViewController.h"
 
-@implementation TestViewController
+@implementation SettingsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,17 +37,28 @@
 }
 */
 
+- (void)showQuilt
+{
+    [((UINavigationController *) [self parentViewController]) pushViewController:[[QuiltViewController alloc] init] animated:YES];
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
     label.text = @"Phooey";
-    label.backgroundColor = [UIColor redColor];
     label.shadowColor = [UIColor blackColor];
-    label.shadowOffset = CGSizeMake (5, 5);
-    label.textColor = [UIColor greenColor];
+    label.shadowOffset = CGSizeMake (1, 1);
+    label.textColor = [UIColor lightGrayColor];
     label.textAlignment= UITextAlignmentCenter;
     [self.view addSubview:label];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self action:@selector(showQuilt) forControlEvents:UIControlEventTouchDown];
+    [button setTitle:@"Phooey" forState:UIControlStateNormal];
+    button.frame = CGRectMake(100, 0, 100, 30);
+    [self.view addSubview:button];
+    
     [super viewDidLoad];
 }
 
